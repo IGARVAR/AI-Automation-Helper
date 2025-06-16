@@ -1,0 +1,46 @@
+# AI-Automation-Helper
+
+**PowerShell-based automation utilities for AI-enriched workflows, data prep, and Copilot integration in Microsoft 365 environments.**
+
+This repository contains helper scripts to streamline CSV normalization, attribute mapping, and Copilot usage analytics. It focuses on preparing datasets for AI/LLM pipelines, governance enforcement, and user engagement reporting.
+
+## Key Use Cases
+
+- Match, enrich, and normalize datasets from multiple systems.
+- Map Microsoft Teams ownership structures via UPN or CSV input.
+- Identify missing links between users, roles, and access data.
+- Rename or obfuscate sensitive fields for secure AI ingestion.
+- Track Microsoft Copilot feature enablement and adoption.
+- Export structured usage reports for Power BI or governance dashboards.
+
+## File Index
+
+| Script | Purpose |
+|--------|---------|
+| `AI_OPER_Match_Emails_From_Matrix.ps1` | Joins two CSVs on email address to enrich source data with mapped fields. |
+| `AI_HELPER_Mapping_Teams_Owners_FromCSV.ps1` | Maps Teams and owners from a flat export or CSV-form response. |
+| `AI_REPORT_Missing_Correlation.ps1` | Detects rows with unresolved identity or ownership mappings across datasets. |
+| `AI_OPER_Rename_Sensitive_Columns.ps1` | Renames or masks fields in CSVs for anonymization or schema cleanup. |
+| `COPILOT_OPER_Enable_Copilot_Features.ps1` | Enables Copilot-specific workloads for eligible M365 tenants and users. |
+| `COPILOT_OPER_Teams_Meeting_Prompts_Injector.ps1` | Adds pre-meeting prompts or agenda hints for better Copilot summarization. |
+| `COPILOT_REPORT_User_Adoption_Insights.ps1` | Reports Copilot adoption stats across Outlook, Teams, and Loop. |
+| `COPILOT_REPORT_User_Engagement_to_BI.ps1` | Exports structured user activity to CSV for Power BI reporting. |
+
+## Requirements
+
+- PowerShell 5.1+ or PowerShell Core
+- Microsoft Graph PowerShell SDK
+- PnP.PowerShell (for SharePoint integration)
+- MS Teams and Copilot licenses (where applicable)
+- Proper delegated or app-based Graph permissions
+
+## Author
+
+Ivan Garkusha  
+Cloud Automation Engineer | M365 + Azure AD | Governance & Security  
+Atlanta, GA  
+[LinkedIn](https://www.linkedin.com/in/ivangarkusha) · [GitHub](https://github.com/IvanGarkusha)
+
+## License
+
+MIT License
